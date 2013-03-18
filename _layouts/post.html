@@ -3,8 +3,22 @@ layout: layout
 ---
 
 <div class="content">
-  <div id="post">
-    <h1>{{ post.title }}</h1>
-    {{ content }}
+  <article class="post">
+    <header>
+      <h1>{{ page.title }}</h1>
+      <h2>
+        <a href="/about" title="About the author">Matt Shwery</a> {% if page.guest_author %} & {{ page.guest_author }} {% endif %} wrote this {{ page.date | date: "%b %e, %Y" }}
+      </h2>
+    </header>
+    <div class="body-copy">
+      {{ content }}
+    </div>
+  </article>
+  <div class="about-the-author">
+    <img src="/img/mshwery.png" alt="The author, M Shwery"/>
+    <div class="author">
+      <h3>About the Author</h3>
+      <p>Matt Shwery is a designer/developer at <a href="http://federatedsample.com">Federated Sample</a>, living in New Orleans. He specializes in user interfaces for web apps and strives for simplicity. He also is the creator of <a href="http://getminimalist.com">minimaList</a>, a simple to-do app.</p>
+    </div>
   </div>
 </div>

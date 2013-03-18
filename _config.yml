@@ -1,5 +1,11 @@
 auto: false
 permalink: none
-pygments: true
 paginate: 10
 exclude: ['public', 'bin', 'vendor', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md']
+markdown: kramdown
+kramdown:
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: nil
+    coderay_bold_every: 0
+    coderay_css: style

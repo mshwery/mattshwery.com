@@ -11,9 +11,8 @@
     <meta name="description" content="stuff">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/article.css">
-    <link href="http://fonts.googleapis.com/css?family=Lora|Playfair+Display" rel="stylesheet" type="text/css">
-    <title>{{ page.title }} | {{ site.title }}</title>
-
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,400italic" rel="stylesheet" type="text/css">
+    <title>{% if page.title %} {{ page.title }} |{% endif %} {{ site.title }}</title>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -29,14 +28,11 @@
     
     <footer> 
       <div class="social">
-      <a href="https://twitter.com/mshwery" target="_blank" title="Twitter">&#62217;</a>
-      <a href="http://dribbble.com/mshwery" target="_blank" title="Dribbble">&#62235;</a>
-      <a href="https://github.com/mshwery" target="_blank" title="Github">&#62208;</a>
-      <a class="icon" href="mailto:mshwery@gmail.com" target="_blank" title="Email">&#128319;</a>
+      <a href="https://twitter.com/mshwery" target="_blank" title="Twitter">&#62217;<span>Twitter</span></a>
+      <a href="http://dribbble.com/mshwery" target="_blank" title="Dribbble">&#62235;<span>Dribbble</span></a>
+      <a href="https://github.com/mshwery" target="_blank" title="Github">&#62208;<span>Github</span></a>
+      <a class="icon" href="mailto:mshwery@gmail.com" target="_blank" title="Email">&#128319;<span>Email</span></a>
     </footer>
 
-    <!-- js -->
-    <script src="js/vendor/jquery-1.8.3.min.js"></script>
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </body>
 </html>

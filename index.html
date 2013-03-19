@@ -3,11 +3,11 @@ layout: layout
 ---
 
 <div class="content">
-  <div class="related">
+  <div class="articles">
     <ul>
       {% for post in site.posts %}
       <li>
-	<span>{{ post.date | date: "%b %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+      	<span>{{ post.date | date: "%b %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
       {% endfor %}
     </ul>

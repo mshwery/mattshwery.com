@@ -7,7 +7,6 @@
          url('fonts/entypo.svg#entypo') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -19,7 +18,6 @@
          url('fonts/entypo-social.svg#entypo-social') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 html {
@@ -33,7 +31,7 @@ body {
   font-family: 'Lora', Georgia, serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  padding-bottom: 88px;
+  padding-bottom: 90px;
   box-sizing: border-box;
 }
 
@@ -49,19 +47,32 @@ img {
 
 h1, h2 {
   font-weight: 400;
-  font-family: 'Lora', 'Playfair Display', Georgia, serif;
 }
 
 h1 { font-size: 3.5em; margin: .25em 0; }
 h2 { font-size: 2.25em; }
 
 a {
-  color: #36A7D8; /* #e73f3f; */ /* #306c9e; */
+  color: #3f677f; /* #36A7D8; /* #e73f3f; */ /* #306c9e; */
   text-decoration: none;
 }
 
+section a {
+  border-bottom: 1px solid #eee;
+}
+
+section a:hover {
+  background: rgba(255, 247, 165, .5);  
+}
+
+figure a:hover {
+  background: none;
+  border: none;
+}
+
 a:hover {
-  border-bottom: 1px solid #36A7D8;
+  color: #222;
+  border-color: #36A7D8;
 }
 
 .content {
@@ -77,9 +88,20 @@ h3 {
 }
 
 pre {
+  white-space: pre-wrap;
   background: #eee;
   padding: 1em 2em;
   margin: 2em -2em;
+}
+
+blockquote {
+  margin: 2em -2em;
+  font-size: 1.25em;
+  font-style: italic;
+}
+
+figure a {
+  display: block;
 }
 
 .post {
@@ -91,7 +113,7 @@ pre {
 }
 
 .post figure {
-  margin: 0 -3em;
+  margin: 1em -3em;
   text-align: center;
 }
 
@@ -116,37 +138,34 @@ pre {
   line-height: 1.6em;
 }
 
-.post pre, .post p {
-  font-size: 1.25em;
-}
-
 .body-copy h2 {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
 
 .post p + p {
   text-indent: 2em;
 }
 
+li {
+  padding: .5em 0;
+}
+
 .body-copy {
+  font-size: 1.25em;
   padding-left: 3em;
   padding-right: 3em;
 }
 
-.body-copy a:visited {
-  color: #71b7e2; /* #f27979; */ /* #7094b2; */ /* #97b5ce; */
-}
-
 .about-the-author {
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   padding: 3em 0;
   margin: 0 3em;
+  font-size: 1.0625em;
 }
 
 .about-the-author img {
-  margin-left: -3em;
+  margin-left: -2em;
   margin-right: 10px;
   float: left;
 }
@@ -156,7 +175,7 @@ pre {
 }
 
 .author p {
-  color: #777;
+  color: #666;
   font-style: italic;
   line-height: 1.5em;
 }
@@ -169,7 +188,11 @@ pre {
   font-family: 'entypo-social';
 }
 
-.social a, header .icon {
+header .icon {
+  color: #e6e7ec;
+}
+
+.social a {
   color: #ccc;
 }
 
@@ -189,8 +212,20 @@ footer {
   right: 0;
 }
 
-footer .social, header .icon {
+header .icon, footer .social {
   font-size: 3em;
+}
+
+footer a {
+  display: inline-block;
+  line-height: 80%;
+  width: 50px;
+}
+
+footer .social span {
+  display: block;
+  font-size: .25em;
+  line-height: 100%;
 }
 
 .home {
@@ -203,6 +238,7 @@ footer .social, header .icon {
 @media screen and (max-width: 600px) {
   body {
     font-size: 80%;
+    padding-bottom: 72px;
   }
   
   h1 { font-size: 3em; }
@@ -213,9 +249,12 @@ footer .social, header .icon {
   }
 
   pre {
-    white-space: pre-wrap;
     padding: 1em;
     margin: 1em -1em;
+  }
+  
+  .post figure {
+    margin: 0 -1em;
   }
 
   .about-the-author {
@@ -229,5 +268,13 @@ footer .social, header .icon {
   .about-the-author img {
     float: none;
     margin: 0 auto 1em;
+  }
+
+  header .icon, footer .social {
+    font-size: 4em;
+  }
+
+  footer .social span {
+    display: none;
   }
 }

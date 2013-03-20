@@ -20,6 +20,17 @@
     font-style: normal;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'entypo-social';
+    src: url('fonts/entypo-social.svg') format('svg');
+  }
+  @font-face {
+    font-family: 'entypo';
+    src: url('fonts/entypo.svg') format('svg');
+  }
+}
+
 html {
   height: 100%;
 }

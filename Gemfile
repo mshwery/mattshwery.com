@@ -1,7 +1,6 @@
-source 'http://rubygems.org'
+source :rubygems
 
 gem 'jekyll'
 gem 'rack-jekyll', :git => 'https://github.com/adaoraul/rack-jekyll'
-gem 'RedCloth'
-#gem 'coderay'
+gem 'coderay'
 gem 'thin'

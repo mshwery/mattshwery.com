@@ -6,7 +6,6 @@ exclude: ['public', 'bin', 'vendor', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rak
 markdown: kramdown
 kramdown:
   use_coderay: true
-
   coderay:
     coderay_css: style
     coderay_line_numbers: nil

@@ -68,6 +68,18 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  max-width: 40px;
+}
+
+.logo, .logo img {
+  display: block;
+}
+
+header {
+  padding: 1em;
+}
+
 section a {
   border-bottom: 1px solid #eee;
 }
@@ -76,9 +88,9 @@ section a:hover {
   background: rgba(255, 247, 165, .5);  
 }
 
-figure a:hover {
+figure a, figure a:hover {
   background: none;
-  border: none;
+  border-color: transparent;
 }
 
 a:hover {
@@ -158,18 +170,34 @@ figure a {
   text-indent: 2em;
 }
 
+.articles {
+  margin: 0 3em;
+  border-top: 1px solid #eee;
+}
+
+.articles ul {
+  padding: 0;
+  list-style: none;
+  font-size: 1.25em;
+  font-style: italic;
+}
+
+.articles .date {
+  color: #aaa;
+}
+
 li {
   padding: .5em 0;
 }
 
 .body-copy {
   font-size: 1.25em;
-  padding-left: 3em;
-  padding-right: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  border-bottom: 1px solid #ddd;
 }
 
 .about-the-author {
-  border-top: 1px solid #ddd;
   padding: 3em 0;
   margin: 0 3em;
   font-size: 1.0625em;
@@ -177,18 +205,15 @@ li {
 
 .about-the-author img {
   margin-left: -2em;
-  margin-right: 10px;
+  margin-right: 20px;
   float: left;
-}
-
-.about-the-author .author {
-  margin-left: 100px;
 }
 
 .author p {
   color: #666;
   font-style: italic;
   line-height: 1.5em;
+  margin-left: 120px;
 }
 
 .icon {
@@ -255,8 +280,8 @@ footer .social span {
   h1 { font-size: 3em; }
 
   .body-copy {
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   pre {
@@ -281,8 +306,16 @@ footer .social span {
     margin: 0 auto 1em;
   }
 
+  .about-the-author p {
+    margin-left: 0;
+  }
+
   header .icon, footer .social {
     font-size: 4em;
+  }
+
+  .articles {
+    margin: 0;
   }
 
   footer .social span {

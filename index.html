@@ -3,16 +3,12 @@ layout: layout
 ---
 
 <div class="content">
-  
-  {% include bio.html %}
 
-  <div class="articles">
-    <ul>
-      {% for post in site.posts %}
-      <li>
-      	<a href="{{ post.url }}">{{ post.title }}</a> <span class="date">– {{ post.date | date: "%b %e" }}</span> 
-      </li>
-      {% endfor %}
-    </ul>
-  </div>  
+  <div class="intro">
+    <img src="/img/mshwery.png" alt="The author, M Shwery"/>
+    <h2>Hi, I'm Matt Shwery – a designer & developer living in New Orleans.</h2>
+  </div>
+
+  {% include articles.html %}
+  
 </div>

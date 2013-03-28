@@ -1,6 +1,8 @@
 ---
 layout: post
 title: I Just Launched Minimalist!
+featured_image: minimalist-bg.png
+featured_background: '#3392D6'
 ---
 ## At last! I launched my simple list app, [minimaList](http://getminimalist.com). You can follow the app or ask questions on twitter: [@get_minimalist](http://twitter.com/get_minimalist)
 

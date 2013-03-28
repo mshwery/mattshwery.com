@@ -73,11 +73,14 @@ a {
 }
 
 .logo, .logo img {
-  display: block;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
 }
 
 header {
   padding: 1em;
+  text-align: center;
 }
 
 section a {
@@ -133,6 +136,11 @@ figure a {
   text-align: center;
 }
 
+.end {
+  text-align: center;
+  font-size: 1.5em;
+}
+
 .post {
   color: #333;
 }
@@ -163,7 +171,7 @@ figure a {
 }
 
 .post p {
-  margin: 0 0 1.15;
+  margin: 0 0 1.15em;
   line-height: 1.6em;
 }
 

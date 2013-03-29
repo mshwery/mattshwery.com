@@ -82,6 +82,26 @@ header {
   padding: 1em;
 }
 
+.more {
+  text-align: center;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-style: italic;
+  padding: 1em 0;
+  margin: 0 3em;
+  /*border-bottom: 1px solid #eee;*/
+}
+
+.more span {
+  padding: 1em 0;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  border-top: 4px double #eee;
+  border-bottom: 4px double #eee;
+}
+
 section a {
   border-bottom: 1px solid #eee;
 }
@@ -195,12 +215,16 @@ figure a {
 .articles ul {
   padding: 0;
   list-style: none;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-style: italic;
 }
 
 .articles .date {
-  color: #aaa;
+  color: #bbb;
+}
+
+.articles .date, .articles .words {
+  font-size: .8em;
 }
 
 li {
@@ -211,7 +235,7 @@ li {
   font-size: 1.25em;
   margin-left: 3em;
   margin-right: 3em;
-  border-bottom: 1px solid #ddd;
+ /* border-bottom: 1px solid #ddd;*/
 }
 
 .about-the-author {
@@ -228,7 +252,7 @@ li {
 
 .author p {
   color: #666;
-  font-style: italic;
+  /*font-style: italic;*/
   line-height: 1.5em;
   margin-left: 120px;
 }

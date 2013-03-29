@@ -1,35 +1,50 @@
 @font-face {
-    font-family: 'entypo';
-    src: url('fonts/entypo.eot');
-    src: url('fonts/entypo.eot?#iefix') format('embedded-opentype'),
-         url('fonts/entypo.woff') format('woff'),
-         url('fonts/entypo.ttf') format('truetype'),
-         url('fonts/entypo.svg#entypo') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'social';
+  src: url("fonts/social.eot?92698223");
+  src: url("fonts/social.eot?92698223#iefix") format('embedded-opentype'), url("fonts/social.woff?92698223") format('woff'), url("fonts/social.ttf?92698223") format('truetype'), url("fonts/social.svg?92698223#social") format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-
-@font-face {
-    font-family: 'entypo-social';
-    src: url('fonts/entypo-social.eot');
-    src: url('fonts/entypo-social.eot?#iefix') format('embedded-opentype'),
-         url('fonts/entypo-social.woff') format('woff'),
-         url('fonts/entypo-social.ttf') format('truetype'),
-         url('fonts/entypo-social.svg#entypo-social') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'entypo-social';
-    src: url('fonts/entypo-social.svg') format('svg');
-  }
-  @font-face {
-    font-family: 'entypo';
-    src: url('fonts/entypo.svg') format('svg');
+    font-family: 'social';
+    src: url('fonts/social.svg?92698223#social') format('svg');
   }
 }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'social';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+/* opacity .8 */
+/* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+/* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+/* Animation center compensation - magrins should be symmetric */
+/* remove if not needed */
+  margin-left: 0.2em;
+/* you can be more comfortable with increased icons size */
+/* font-size: 120%; */
+/* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-paper-plane:before { content: '\e01e'; } /* '' */
+.icon-github:before { content: '\f300'; } /* '' */
+.icon-twitter:before { content: '\f309'; } /* '' */
+.icon-dribbble:before { content: '\f31b'; } /* '' */
 
 html {
   height: 100%;
@@ -261,23 +276,12 @@ li {
   margin-left: 120px;
 }
 
-.icon {
-  font-family: 'entypo';
-}
-
 .social {
-  font-family: 'entypo-social';
-}
-
-header .icon {
-  color: #e6e7ec;
-}
-
-.social a {
+  font-family: 'social';
   color: #bbb;
 }
 
-.social a:hover, header .icon:hover, header .icon:active {
+.social:hover {
   color: #36A7D8;
   text-decoration: none;
   border: none;
@@ -293,20 +297,21 @@ footer {
   right: 0;
 }
 
-header .icon, footer .social {
-  font-size: 3em;
+footer .social {
+  font-size: 1.5em;
 }
 
 footer a {
   display: inline-block;
-  line-height: 80%;
   width: 50px;
+  margin: 0 .25em;
 }
 
 footer .social span {
   display: block;
-  font-size: .25em;
-  line-height: 100%;
+  font-size: .5em;
+  margin: .5em 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .intro {
@@ -322,7 +327,7 @@ footer .social span {
 @media screen and (max-width: 600px) {
   body {
     font-size: 80%;
-    padding-bottom: 72px;
+    padding-bottom: 56px;
   }
   
   h1 { font-size: 3em; }
@@ -330,6 +335,10 @@ footer .social span {
   .body-copy {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .intro {
+    padding: 0;
   }
 
   pre {
@@ -358,12 +367,16 @@ footer .social span {
     margin-left: 0;
   }
 
-  header .icon, footer .social {
-    font-size: 4em;
+  footer .social {
+    font-size: 2em;
   }
 
   .articles {
     margin: 0;
+  }
+
+  .post .words {
+    display: none;
   }
 
   footer .social span {

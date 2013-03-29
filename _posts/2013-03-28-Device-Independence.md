@@ -3,24 +3,24 @@ layout: post
 title: Device Independence
 ---
 
-Unfortunately, for all the methodologies that are used in Responsive Web Design, we still cling to the artifacts of old things.
+The world of screens is multiplying, and with it the use of Responsive Design. But [we're still figuring it out](http://alistapart.com/article/responsive-web-design).
 
-#### The web is responsive by design.
+#### The web is responsive by default.
 
-We aren't really talking about the web so much as we're talking about browsers. Browsers render html rather flexibly. Elements have default styles that allow fluidity. For every style you write, you are creating a more rigid definition of how an element should be rendered.
+Not really the web so much as I mean browsers. Browsers render html rather flexibly. Elements have default styles that allow fluidity. For every style rule you write, you are creating a more rigid definition of how an element should be rendered.
 
 
-#### So use media queries.
+#### What if I use media queries?
 
-That's great. Really, media queries are a handy way to define styles selectively. For awhile I used to do something like this:
+That's great. Really, media queries are a handy way to define styles selectively so your. For awhile I used to do something like this:
 
 ~~~ css
   @media all and (max-device-width: 480px) { … }
 ~~~
 
-I was trying to narrowly define rules for a specific size (this one caters to iPhone 4-). This doesn't work on iPhone 5, nor on many Android devices. I was defining breakpoints by device.
+I defined media query breakpoints around devices that I am familiar with: like the iPhone. But this one wont target iPhone 5, nor many Android devices.
 
-But what I should have been doing was this:
+I should have been doing this:
 
 ~~~ css
   @media all and (max-width: 600px) { … }
@@ -32,3 +32,10 @@ I shifted my media queries to focus to on where the design breaks. It is called 
 #### When should I aim for responsive design?
 
 Generally, device agnosticism is a good idea. Unless you have a specific reason for rigidity. Cennydd Bowles has a nice method to help you figure out when to use RWD – he calls [the gradient chart](http://cennydd.co.uk/2013/the-gradient-chart).
+
+
+#### RWD tips & tricks
+
+Fortunately, W3C has many proposals and drafts that will be coming of age soon. I mention some of my favorites in the talk:
+
+<script async class="speakerdeck-embed" data-id="5e815a0064530130f08a12313d04fda1" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>

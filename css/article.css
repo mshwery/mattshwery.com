@@ -60,6 +60,10 @@ h1, h2 {
   font-weight: 400;
 }
 
+h3, h4, h5, h6 {
+  margin: 1.5em 0 .5em;
+}
+
 h1 { font-size: 3.5em; margin: .25em 0; }
 h2 { font-size: 2.25em; }
 
@@ -98,12 +102,12 @@ header {
   display: inline-block;
   *display: inline;
   zoom: 1;
-  border-top: 4px double #eee;
-  border-bottom: 4px double #eee;
+  border-top: 4px double #ddd;
+  border-bottom: 4px double #ddd;
 }
 
 section a {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 section a:hover {

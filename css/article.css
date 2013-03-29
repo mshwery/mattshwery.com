@@ -80,7 +80,6 @@ a {
 
 header {
   padding: 1em;
-  text-align: center;
 }
 
 section a {
@@ -94,6 +93,14 @@ section a:hover {
 figure a, figure a:hover {
   background: none;
   border-color: transparent;
+}
+
+.post .words {
+  color: transparent;
+}
+
+.post:hover .words {
+  color: #ddd;
 }
 
 a:hover {

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A New Save
+title: A New Save Icon
 date: 2013-03-29
 featured_image: floppy.png
 ---
@@ -9,10 +9,10 @@ There's been some recent [discussion](http://branch.com/b/redesigning-the-save-s
 
 I feel the "save" metaphor is old, but often still relevant. Ever make changes that you don't want auto-saved? I do. I make a series of changes when working through an idea, and then decide if I want to keep or reject them.
 
-Perhaps the word 'save' needs some thought. What other words represent both legacy, modern, and future versions of this action? Keep, commit, update, sync. 
+Perhaps the word 'save' needs some thought. What other words represent both legacy, modern, and future versions of this action? Keep, commit, update, sync?
 
-I really like 'commit' as one who works with versioning systems on a daily basis. A file goes through many changes – some being committed, others discarded. Each commit is a snapshot of the file in that moment. Here's my first attempt:
+I really like 'commit' because I work with versioning systems on a daily basis. A file goes through many changes – some get committed, others get discarded. Each commit is a snapshot of the file in that moment. Here's my first attempt:
 
 <figure><img src="../img/commit.png"/></figure>
 
-I think there's a lot of room to move this idea further. Perhaps something less abstract, or actually more indexical is necessary. Maybe we don't need an iconographic representation at all?
+I think there's a lot of room to move this idea forward. Perhaps something less abstract, or actually more indexical is necessary. Maybe we don't need an iconographic representation at all?

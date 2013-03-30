@@ -3,6 +3,7 @@ layout: post
 title: I Just Launched Minimalist!
 featured_image: minimalist-bg.png
 featured_background: '#51aeef'
+date: 2012-09-18
 ---
 ## At last! I launched my simple list app, [minimaList](http://getminimalist.com).
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Device Independence
+date: 2013-03-27
 ---
 
 The world of screens is multiplying, and with it the use of Responsive Design. But [we're still figuring it out](http://alistapart.com/article/responsive-web-design).

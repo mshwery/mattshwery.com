@@ -8,18 +8,18 @@ The world of screens is multiplying, and with it the use of Responsive Design. B
 
 #### The web is responsive by default.
 
-Not really the web so much as I mean browsers. Browsers render html rather flexibly. Elements have default styles that allow fluidity. For every style rule you write, you are creating a more rigid definition of how an element should be rendered.
+Not really the web so much as I mean browsers. Browsers render html rather flexibly. Elements have default styles that allow fluidity. For every style you write, you create a more rigid definition of how an element should be rendered.
 
 
 #### What if I use media queries?
 
-That's great. Really, media queries are a handy way to define styles selectively so your. For awhile I used to do something like this:
+That's great. Really, media queries are a handy way to define styles selectively so your. I used to do something like this:
 
 ~~~ css
   @media all and (max-device-width: 480px) { … }
 ~~~
 
-I defined media query breakpoints around devices that I am familiar with: like the iPhone. But this one wont target iPhone 5, nor many Android devices.
+I defined media queries around device dimensions that I was familiar with (like the iPhone). But this one wont target iPhone 5, nor many Android devices.
 
 I should have been doing this:
 
@@ -27,7 +27,7 @@ I should have been doing this:
   @media all and (max-width: 600px) { … }
 ~~~
 
-I shifted my media queries to focus to on where the design breaks. It is called a breakpoint, after all. This covers a much wider range of browsers sizes (and devices) when you define breakpoints by content/layout rather than by device dimensions.
+I shifted my media queries to focus on where the design breaks. It is called a breakpoint, after all. Defining breakpoints by content/layout rather than device dimensions covers a much broader range of displays.
 
 
 #### When should I aim for responsive design?

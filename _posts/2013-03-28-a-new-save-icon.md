@@ -11,8 +11,10 @@ I feel the "save" metaphor is old, but often still relevant. Ever make changes t
 
 Perhaps the word 'save' needs some thought. What other words represent both legacy, modern, and future versions of this action? Keep, commit, update, sync?
 
-I really like 'commit' because I work with versioning systems on a daily basis. A file goes through many changes – some get committed, others get discarded. Each commit is a snapshot of the file in that moment. Here's my first attempt:
+I really like 'commit' because I work with versioning systems on a daily basis. A file goes through many changes – some get committed, others get discarded. Each commit is a snapshot of the file in that moment. Here's my first thought:
 
 <figure><img src="../img/commit.png"/></figure>
+
+Basically, the circle represents the current moment on a file's version timeline. An empty circle could represent uncommitted changes, while a solid/dotted circle has been committed.
 
 I think there's a lot of room to move this idea forward. Perhaps something less abstract, or actually more indexical is necessary. Maybe we don't need an iconographic representation at all?

@@ -17,4 +17,6 @@ I really like 'commit' because I work with versioning systems on a daily basis. 
 
 Basically, the circle represents the current moment on a file's version timeline. An empty circle could represent uncommitted changes, while a solid/dotted circle has been committed.
 
-I think there's a lot of room to move this idea forward. Perhaps something less abstract, or actually more indexical is necessary. Maybe we don't need an iconographic representation at all?
+I think there's a lot of room to move this idea forward. Perhaps something less abstract is necessary. Maybe we don't need an iconographic representation at all?
+
+Edit: The floppy disk icon is awkward because it's in transition from an indexical sign to something more symbolic. Historically, the floppy disk represents the signified act of saving; while today the floppy disk bears no correlation to 'save.' Perhaps the transition just needs time to complete.

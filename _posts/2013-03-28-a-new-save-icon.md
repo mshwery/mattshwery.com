@@ -19,4 +19,4 @@ Basically, the circle represents the current moment on a file's version timeline
 
 I think there's a lot of room to move this idea forward. Perhaps something less abstract is necessary. Maybe we don't need an iconographic representation at all?
 
-Edit: The floppy disk icon is awkward because it's in transition from an indexical sign to something more symbolic. Historically, the floppy disk represents the signified act of saving; while today the floppy disk bears no correlation to 'save.' Perhaps the transition just needs time to complete.
+Furthermore, the floppy disk icon feels awkward now because it's in transition from an [indexical sign to something more symbolic](http://www.cs.indiana.edu/~port/teach/103/sign.symbol.short.html). Historically, the floppy disk is a physical thing that correlates with the act of saving; while today it doesn't. Perhaps the transition just needs time to complete.

@@ -1,5 +1,4 @@
 title: MattShwery.com
-auto: true
 permalink: /:title
 paginate: 10
 exclude: ['public', 'bin', 'vendor', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md']

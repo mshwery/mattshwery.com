@@ -5,7 +5,7 @@ date: 2013-03-29
 featured_image: floppy.png
 ---
 
-There's been some recent [discussion](http://branch.com/b/redesigning-the-save-symbol-let-s-do-this) on redesigning the save icon. This conversation crops up from [time](http://www.ironicsans.com/2011/04/idea_a_new_save_icon.html) to [time](http://www.marco.org/2011/04/05/replacing-the-save-icon), but no lasting fruit has come from it... <i>yet</i>.
+There's been some [recent discussion on Branch about redesigning the save icon](http://branch.com/b/redesigning-the-save-symbol-let-s-do-this). This conversation crops up from [time](http://www.ironicsans.com/2011/04/idea_a_new_save_icon.html) to [time](http://www.marco.org/2011/04/05/replacing-the-save-icon), but no lasting fruit has come from it... <i>yet</i>.
 
 I feel the "save" metaphor is old, but often still relevant. Ever make changes that you don't want auto-saved? I do. I make a series of changes when working through an idea, and then decide if I want to keep or reject them.
 

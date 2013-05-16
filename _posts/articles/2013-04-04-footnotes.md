@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: articles
 title: Footnotes
 date: 2013-04-04
 featured_image: footnotes.png

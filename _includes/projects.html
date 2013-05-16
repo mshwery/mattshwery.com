@@ -1,0 +1,9 @@
+<div class="articles">
+  <ul>
+    {% for project in site.categories.projects %}
+    <li class="project">
+      <a href="{{ project.url }}">{{ project.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>  

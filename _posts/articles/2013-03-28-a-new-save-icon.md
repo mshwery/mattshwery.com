@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: articles
 title: A New Save Icon
 date: 2013-03-29
 featured_image: floppy.png

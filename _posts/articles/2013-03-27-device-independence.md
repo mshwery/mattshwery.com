@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: articles
 title: Device Independence
 date: 2013-03-27
 ---

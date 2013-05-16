@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: articles
 title: Sass Loops
 date: 2013-02-08
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: articles
 title: I Just Launched Minimalist!
 featured_image: minimalist-bg.png
 featured_background: '#51aeef'

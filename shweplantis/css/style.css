@@ -1,0 +1,857 @@
+/**
+ * HTML5 ✰ Boilerplate
+ *
+ * style.css contains a reset, font normalization and some base styles.
+ *
+ * Credit is left where credit is due.
+ * Much inspiration was taken from these projects:
+ * - yui.yahooapis.com/2.8.1/build/base/base.css
+ * - camendesign.com/design/
+ * - praegnanz.de/weblog/htmlcssjs-kickstart
+ */
+
+
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { color: #020024; border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+/**
+ * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
+ */
+
+body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+select, input, textarea, button { font:99% sans-serif; }
+
+/* Normalize monospace sizing:
+   en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+
+/**
+ * Minimal base styles.
+ */
+
+/* Always force a scrollbar in non-IE */
+html { overflow-y: scroll; }
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+ul, ol { margin-left: 0; }
+ol { list-style-type: none; }
+
+/* Remove margins for navigation lists */
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+
+td { vertical-align: top; }
+
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre {
+  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre; white-space: pre-wrap; word-wrap: break-word;
+  padding: 15px;
+}
+
+textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+
+/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea { margin: 0; }
+
+/* Colors for form validity */
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid {
+   border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+/* These selection declarations have to be separate
+   No text-shadow: twitter.com/miketaylr/status/12228805301
+   Also: hot pink! */
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+
+/* j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+/* Make buttons play nice in IE:
+   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {  width: auto; overflow: visible; }
+
+/* Bicubic resizing for non-native sized IMG:
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+/**
+ * You might tweak these..
+ */
+
+body, select, input, textarea {
+  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
+  color: #444;
+  /* Set your base font here, to apply evenly */
+  /* font-family: Georgia, serif;  */
+}
+
+/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+a, a:active, a:visited { color: #696767; text-decoration: none; }
+a:hover { color: #333030;}
+
+
+/**
+ * Primary styles
+ *
+ * Author: Matthew Shwery
+ */
+ 
+ 
+/* CSSDA Nominee & Awards */
+
+#css-awards #nominee {
+	position: fixed;
+	right: 0;
+	top: -23px;
+	background: url("../img/css-design-award-nominee-duo-vertical.png") no-repeat top right;
+	height: 164px;
+	width: 69px;
+	text-indent: -9999px;
+	z-index: 500;
+	display: block;
+	}
+
+/* Global Styles */
+
+body {
+	background: url(../img/bg.png) repeat;
+	}
+
+.left {
+	display: block;
+	float: left;
+	}
+
+.right {
+	display: block;
+	float: right;
+	}
+
+.wrapper {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.light-bg {
+	color: #041e52;
+	}
+	
+.dark-bg {
+	color: #fff;
+	}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+.address {
+	font-family: 'Georgia', Times New Roman, serif;
+	color: #4f5e7c;
+	}
+
+.border-top {
+	border-top: 1px solid #fff;
+	}
+	
+.border-bottom {
+	border-bottom: 1px solid #bcbcbc;	
+	}
+
+/* Header */
+
+header {
+	}
+	
+#underlay {
+	background: white;
+	position: fixed;
+	opacity: .98;
+	z-index: 100;
+	height: 60px;
+	width: 100%;
+	top: 0;
+	}
+	
+header #nav {
+	position: fixed;
+	z-index: 1000;
+	width: 960px;
+	top: 0;
+	}
+	
+header #nav ul {
+	padding: 12px 0px;
+	}
+	
+header #nav ul li {
+	padding: 10px 35px;
+	display: block;
+	float: left;
+	}
+
+header #nav ul li a {
+	font-family: 'Josefin Sans', 'Museo Sans', 'Futura', Arial;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 8px 15px 5px 15px;
+	line-height: 20px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;	
+	}
+	
+.unselected {
+	border: 1px solid transparent;
+}
+
+header #nav ul li a.hovered {
+	background: #eae9e9;
+	border: 1px solid #e3e2e2;
+}
+
+header #nav ul li a:active, .selected {
+	background: #eae9e9;
+	color: #696767;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom: 1px solid #e3e2e2;
+    border-left: 1px solid #e3e2e2;
+    border-top: 1px solid #c0bfbf;
+    border-right: 1px solid #c0bfbf;
+	}
+
+
+header #nav #emblem {
+	text-indent: -9999px;
+	background: url(../img/emblem.png) no-repeat center center;
+	width: 120px;
+	height: 122px;
+	display: block;
+	margin-top: -8px;
+	}
+	
+/* Intro */
+
+#main {
+	margin-top: 200px;
+	}
+	
+#main #pics {
+	background: url(../img/pics.png) no-repeat center center;
+	width: 880px;
+	height: 301px;
+	}
+	
+#main #intro {
+	background: url(../img/married.png) no-repeat center top;
+	height: 175px;
+	padding-top: 50px;
+	margin-top: 60px;
+	}
+	
+#main #intro p {
+	font-family: 'Josefin Sans', 'Museo Sans', 'FuturaLight', Arial;
+	font-size: 22px;
+	text-align: center;
+	line-height: 38px;
+	padding-top: 40px;
+	width: 880px;
+	}
+	
+/* Big Day */
+
+.backdrop {
+	background: #021338 url(../img/backdrop.png) repeat-y center;
+	padding: 100px 0px 60px 0px;
+	}
+
+.backdrop #big-day {
+	padding-bottom: 90px;
+	}
+
+.backdrop #big-day #ceremony, .backdrop #big-day #reception {
+	width: 450px;
+	font-family: 'Josefin Sans', 'Futura', Arial;
+	color: #fff;
+	font-weight: 100;
+	}
+
+#big-day #ceremony a, #big-day #reception a {
+	color: #eee;
+	}	
+
+#big-day #ceremony a:hover, #big-day #reception a:hover {
+	color: #fff;
+	}	
+	
+.backdrop #big-day #ceremony {
+	background: url(../img/ceremony.png) no-repeat top left;
+	min-height: 57px;
+	}
+	
+.thumb {
+	width: 170px;
+	height: 114px;
+	}
+ 
+.backdrop #big-day #reception {
+	background: url(../img/reception.png) no-repeat top left;
+	min-height: 57px;
+	}
+
+.backdrop #big-day .title {
+	padding: 80px 10px 10px 0px;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 1px;
+	}
+
+.backdrop #big-day .title a:hover {
+	text-decoration: underline;
+	color: #fff;
+	}
+	
+.when {
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+	}
+	
+.backdrop #big-day .descript {
+	padding-left: 20px;
+	width: 260px;
+	}
+	
+.backdrop #big-day .address {
+	background: #021133;
+	padding: 10px;
+	color: #999;
+	font-style: italic;
+	font-size: 10.5px;
+	margin-top: 10px;
+	min-width: 240px;
+	letter-spacing: -.05em;
+	}
+
+.backdrop #big-day .address:hover {
+	color: #fff;
+	text-decoration: underline;
+	}
+
+.backdrop #big-day .descript, .backdrop #big-day .descript {
+	font-family: 'Georgia', Times New Roman, serif;
+	font-size: 12px;
+	line-height: 22px;
+	}
+
+/* Travel */
+
+#travel {
+	padding: 100px 0px 50px 0px;
+	}
+	
+#travel h1 a{
+	text-indent: -9999px;
+	background: url(../img/travel.png) no-repeat center top;
+	width: 139px;
+	height: 47px;
+	padding-bottom: 50px;
+	display: block;
+	}
+	
+#travel h2 {
+	text-indent: -9999px;
+	background: url(../img/map.png) no-repeat center top;
+	width: 439px;
+	height: 293px;
+	padding: 20.5px;
+	}
+	
+#travel .transport-mode {
+	margin: 0px 20px;
+	padding: 20px 0px;
+	width: 440px;
+	}
+	
+#travel .transport-mode h3 {
+	font-family: 'Josefin Sans', 'Futura', Arial;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	}
+
+#travel .transport-mode h3 a {
+	color: #041e52;
+	}
+	
+#travel .transport-mode h3 a:hover {
+	color: #020024;
+	text-decoration: underline;
+	}
+	
+#travel .transport-mode .address a {
+	color: #4f5e7c;
+	}
+	
+#travel .transport-mode .address a:hover {
+	color: #041e52;
+	}
+	
+#travel .transport-mode .address {
+	font-size: 12px;
+	line-height: 20px;
+	}
+
+#travel .transport-mode #plane {
+	background: url(../img/plane_icon.png) no-repeat left center;
+	padding-left: 50px;
+	min-height: 34px;
+	}
+	
+#travel .transport-mode #plane a {
+	display: block;
+	}
+		
+#travel .transport-mode #car {
+	background: url(../img/car_icon.png) no-repeat left center;
+	padding-left: 60px;
+	}
+	
+#travel .transport-mode #foot {
+	padding-left: 40px;
+	background: url(../img/walk_icon.png) no-repeat left center;
+	}
+	
+/* Lodging */
+
+#lodging {
+	padding: 50px 0px 61px 0px;
+	}
+	
+#lodging h1 a {
+	text-indent: -9999px;
+	background: url(../img/lodging.png) no-repeat center top;
+	width: 162px;
+	height: 58px;
+	padding-bottom: 50px;
+	display: block;
+	}
+	
+#lodging h2 {
+	text-indent: -9999px;
+	background: url(../img/hotel.png) no-repeat center top;
+	width: 439px;
+	min-height: 362px;
+	padding: 20.5px;
+	}
+	
+#lodging #tourism {
+	padding: 0px 15px 52px 0px;
+	font-family: 'Josefin Sans', 'FuturaLight', Arial;
+	color: #041e52;
+	font-size: 18px;
+	line-height: 30px;
+	max-width: 450px;
+	}
+	
+#lodging #tourism a:hover {
+	text-decoration: underline;
+	}
+
+#lodging .hotels .border-top, #lodging .hotels .border-bottom, #travel .transport-mode .border-top, #travel .transport-mode .border-bottom {
+	margin: 0px 20px;
+	padding: 20px 0px;
+	}
+	
+#lodging .hotels {
+	margin: 0px 20px;
+	padding: 20px 0px;
+	width: 440px;
+	}
+	
+#lodging a, #lodging .hotels .address a:hover {
+	color:#041e52;
+	}
+	
+#lodging .hotels h3 {
+	font-family: 'Josefin Sans', 'Futura', Arial;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	}
+
+#lodging .hotels h3 a:hover {
+	text-decoration: underline;
+	color: #020024;
+	}
+	
+#lodging .hotels .address {
+	padding-left: 15px;
+	line-height: 20px;
+	}
+	
+#lodging .hotels .address a {
+	font-size: 12.25px;
+	letter-spacing: -.07em;
+	color: #4F5E7C;
+	display: block;
+	}
+		
+#lodging .hotels #hampton {
+	background: url(../img/hampton_icon.png) no-repeat center center;
+	width: 80px;
+	height: 60px;
+	display: block;
+	text-indent: -9999px;
+	}
+
+#lodging .hotels #holiday {
+	background: url(../img/holiday_icon.png) no-repeat center center;
+	width: 84px;
+	height: 60px;
+	display: block;
+	text-indent: -9999px;
+	}
+
+#lodging .hotels #rosier {
+	background: url(../img/rosier_icon.png) no-repeat center center;
+	height: 60px;
+	width: 87px;
+	display: block;
+	text-indent: -9999px;
+	}
+	
+#lodging .hotels #estorge {
+	background: url(../img/esterge_icon.png) no-repeat center center;
+	height: 60px;
+	width: 50px;
+	display: block;
+	text-indent: -9999px;	
+	}		
+
+/* Registry */
+
+.backdrop #registry {
+	padding-bottom: 60px;
+	text-align: center;
+	}
+
+.backdrop #registry h1 {
+	padding-bottom: 80px;
+	}
+	
+.backdrop #registry h1 a {
+	background: url(../img/registry.png) no-repeat top left;
+	width: 172px;
+	height: 56px;
+	text-indent: -9999px;
+	display: block;
+	}
+	
+.backdrop #registry div {
+	width: 240px;
+	display: inline-block;
+	zoom: 1;
+	*display:inline;
+}
+	
+.backdrop #registry #pieces-eight a {
+	background: url(../img/pieces_icon.png) no-repeat center center;
+	width: 201px;
+	height: 44px;
+	padding: 28px 19px;
+	}
+	
+.backdrop #registry #allains a {
+	width: 170px;
+	height: 85px;
+	background: url(../img/allains.png) no-repeat center center;
+	padding: 7.5px 35px;
+	}
+	
+.backdrop #registry #williams-sonoma a {
+	width: 196px;
+	height: 15px;
+	background: url(../img/williams_sonoma.png) no-repeat center center;
+	padding: 42.5px 22px;
+	}
+	
+.backdrop #registry div a {
+	text-indent: -9999px;
+	display: block;
+}
+
+.backdrop #registry #dillards a {
+	width: 200px;
+	height: 58px;
+	background: url(../img/dillards_logo.png) no-repeat center center;
+	padding: 21px 20px;
+}
+
+.backdrop #registry #bed-bath a {
+	width: 200px;
+	height: 63px;
+	background: url(../img/bed_bath.png) no-repeat center center;
+	padding: 20px 18.5px;
+	}
+
+/* Leave us a message */
+
+#send-message {
+	padding: 100px 0px 50px 0px;
+	background: url(../img/form_gradient.png) no-repeat center 94%;
+	}
+	
+#send-message h4 {
+	font-family: 'Josefin Sans', 'FuturaLight', Arial;
+	font-size: 34px;
+ 	color: #041e52;
+ 	text-align: center;
+ 	padding-bottom: 40px;
+	}
+	
+#send-message form {
+	padding: 26px;
+	font-size: 13px;
+	color: #949fa3;
+	}
+	
+#send-message form input, textarea {
+	margin: 6px 0px 18px 0px;
+	min-height: 30px;
+	width: 326px;
+	font-size: 15px;
+	padding: 0px 5px;
+	color: #162d37;
+	border: 5px solid #e7edef;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+	}
+	
+#send-message form #message {
+	height: 115px;
+	-webkit-appearance: textarea;
+	background-color: white;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	-webkit-box-orient: vertical;
+	resize: none;
+	cursor: auto;
+	padding: 5px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow-y: hidden;
+	line-height: 20px;
+	}
+
+/* Form */
+
+#send-message #form-bg {
+	background: #fff;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #d6d6d1;
+    width: 400px;
+    height: 440px;	
+	}
+	
+#send-message form #submit-button {
+	background: url(../img/submit_button.png) no-repeat center bottom;
+	width: 164px;
+	height: 32px;
+	border: none;
+	color: transparent;
+	}
+/*
+#send-message form #submit-button:hover { background-position: center center; }
+#send-message form #submit-button:active { background-position: center top; }
+*/
+.message {background:#eee; color:#000;display:none;width:400px;padding:10px;}
+
+#filler {
+	cursor: pointer;
+	}
+
+/* Footer */
+
+footer #states {
+	text-indent: -9999px;
+	background: url(../img/la_loves_ia.png) no-repeat center center;
+	width: 150px;
+	height: 38px;
+	}
+	
+footer p, footer a {
+	font-family: 'Georgia', Times New Roman, serif;
+	font-style: italic;
+	font-size: 10px;
+	color: #bcbcb5;
+	text-align: center;
+	padding: 10px 0px;
+	text-shadow: -1px 1px #fff;
+	}
+
+footer {
+	padding: 50px 0px;
+	}
+
+
+
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+
+/* For image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+   j.mp/bestclearfix */
+.clear:before, .clear:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clear:after { clear: both; }
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clear { zoom: 1; }
+
+
+
+/**
+ * Media queries for responsive design.
+ *
+ * These follow after primary styles so they will successfully override.
+ */
+
+@media all and (orientation:portrait) {
+  /* Style adjustments for portrait mode goes here */
+
+}
+
+@media all and (orientation:landscape) {
+  /* Style adjustments for landscape mode goes here */
+
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
+   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+
+
+  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust */
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+
+/**
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ */
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+

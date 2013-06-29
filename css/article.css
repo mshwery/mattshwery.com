@@ -104,21 +104,12 @@ header {
 .more {
   text-align: center;
   color: #555;
-  text-transform: uppercase;
   font-size: 1.25em;
   font-style: italic;
   padding: 1em 0;
-  margin: 0 3em;
-  /*border-bottom: 1px solid #eee;*/
-}
-
-.more span {
-  padding: 1em 0;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  border-top: 4px double #ddd;
-  border-bottom: 4px double #ddd;
+  margin: 1em 3em;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 p sup {
@@ -136,12 +127,7 @@ section a {
   border-bottom: 1px solid #e5e5e5;
 }
 
-section a:hover {
-  background: rgba(255, 247, 165, .5);  
-}
-
 figure a, figure a:hover {
-  background: none;
   border-color: transparent;
 }
 
@@ -154,8 +140,7 @@ figure a, figure a:hover {
 }
 
 a:hover {
-  color: #222;
-  border-color: #36A7D8;
+  color: #0d4774;
 }
 
 .content {
@@ -269,7 +254,7 @@ li {
 }
 
 .about-the-author {
-  padding: 3em 0;
+  padding: 2em 0;
   margin: 0 3em;
   font-size: 1.0625em;
 }
@@ -377,6 +362,12 @@ footer .social span {
 
 .logo:hover img {
   opacity: 1;
+}
+
+figcaption {
+  font-size: .75em;
+  font-style: italic;
+  color: #888;
 }
 
 @media screen and (max-width: 600px) {

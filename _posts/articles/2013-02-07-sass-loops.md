@@ -9,7 +9,7 @@ In nearly every project I've worked on, patterns develop throughout the css. Tha
 
 Sass offers `@each`, `@for`, `@while` loops to simplify pattern-making. [The Sass Way](http://thesassway.com/intermediate/if-for-each-while) talks about this in a bit more detail. Here's an example of `@each`:
 
-~~~ scss
+~~~ sass
 $icon: [create, view, edit, delete]
 
 @each $icon {

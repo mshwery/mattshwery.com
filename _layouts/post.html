@@ -17,9 +17,12 @@ layout: layout
     <div class="body-copy">
       {{ content }}
     </div>
+    <div class="comments">
+      {% include disqus.html %}
+    </div>
   </article>
-  <div class="more">
-    <span>See <a href="/">All Posts</a></span>
-  </div>
-  {% include bio.html %}
+</div>
+
+<div class="more">
+  <span>See <a href="/">All Posts</a></span>
 </div>

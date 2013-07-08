@@ -17,7 +17,7 @@ For every page of your static site, you've got repeated content (ie. headers, fo
 
 This site is built with [Jekyll](http://jekyllrb.com/), a generator for "simple, blog-aware, static sites". There are others, like [Middleman](http://middlemanapp.com/), but I'll just be looking at the basics of Jekyll for now.
 
-With Jekyll, you can put together a large site using partials and nested templates. Jekyll gives you full control over every page, while giving you many benefits of a framework. I take advantage of loading page-specific javascript like [my d3.js example](/d3-js), and [archiving old sites](/shweplantis) on my domain.
+With Jekyll, you can put together a large site using partials and nested templates. Jekyll gives you full control over every page, while giving you many benefits of a framework. I take advantage of loading page-specific javascript like [my d3.js example](/d3-js), and [archiving old sites](/shweplantis/) on my domain.
 
 ### Jekyll in Three Lines
 

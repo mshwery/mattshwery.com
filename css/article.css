@@ -1,51 +1,3 @@
-@font-face {
-  font-family: 'social';
-  src: url("fonts/social.eot?92698223");
-  src: url("fonts/social.eot?92698223#iefix") format('embedded-opentype'), url("fonts/social.woff?92698223") format('woff'), url("fonts/social.ttf?92698223") format('truetype'), url("fonts/social.svg?92698223#social") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'social';
-    src: url('fonts/social.svg?92698223#social') format('svg');
-  }
-}
-
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  font-family: 'social';
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center;
-/* opacity .8 */
-/* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-/* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-/* Animation center compensation - magrins should be symmetric */
-/* remove if not needed */
-  margin-left: 0.2em;
-/* you can be more comfortable with increased icons size */
-/* font-size: 120%; */
-/* Uncomment for 3D effect */
-/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-.icon-paper-plane:before { content: '\e01e'; } /* '' */
-.icon-github:before { content: '\f300'; } /* '' */
-.icon-twitter:before { content: '\f309'; } /* '' */
-.icon-dribbble:before { content: '\f31b'; } /* '' */
-
 html {
   height: 100%;
 }
@@ -54,10 +6,10 @@ body {
   position: relative;
   min-height: 100%;
   font-size: 100%;
-  font-family: 'Lora', Georgia, serif;
+  font-family: 'Lora', Times, 'Times New Roman', Georgia, sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  padding-bottom: 84px;
+  padding-bottom: 63px;
   box-sizing: border-box;
 }
 
@@ -71,8 +23,12 @@ img {
   text-shadow: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
 h1, h2 {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h3, h4, h5, h6 {
@@ -97,10 +53,6 @@ a {
   zoom: 1;
 }
 
-header {
-  padding: 1em;
-}
-
 .more {
   text-align: center;
   color: #555;
@@ -113,12 +65,6 @@ header {
 p sup {
   font-size: .75em;
   line-height: 1em;
-}
-
-.footnotes {
-  font-size: .75em;
-  list-style: none;
-  padding: 0;
 }
 
 section a {
@@ -141,9 +87,9 @@ a:hover {
   color: #0d4774;
 }
 
-.content {
+.wrapper {
   width: 90%;
-  max-width: 768px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 2em 0;
 }
@@ -222,7 +168,6 @@ figure a {
 }
 
 .articles {
-  margin: 0 3em;
   border-top: 1px solid #eee;
 }
 
@@ -246,14 +191,11 @@ li {
 }
 
 .body-copy, .comments {
-  margin-left: 3em;
-  margin-right: 3em; 
-  font-size: 1.25em;
+  font-size: 1.125em;
 }
 
 .about-the-author {
   padding: 2em 0;
-  margin: 0 3em;
   font-size: 1.0625em;
 }
 
@@ -275,8 +217,7 @@ li {
 }
 
 .social {
-  font-family: 'social';
-  color: #bbb;
+  color: #aaa;
 }
 
 .social:hover {
@@ -287,44 +228,34 @@ li {
 
 footer {
   background: #f5f5f5;
-  text-align: center;
-  padding: 1em 0;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
 
-footer .social {
-  font-size: 1.5em;
+footer {
+  font-size: .75em;
+}
+
+footer span {
+  color: #888;
 }
 
 footer a {
-  display: inline-block;
-  width: 50px;
-  margin: 0 .25em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-left: 1em;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
 
-footer .social span {
-  display: block;
-  font-size: .5em;
-  margin: .5em 0;
-  font-family: Arial, Helvetica, sans-serif;
+.intro-title {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  font-weight: 400;
+  font-family: 'Lora', Times, 'Times New Roman', Georgia, sans-serif;
 }
-
-.intro {
-  padding: 0 3em;
-  text-align: center;
-}
-
-.intro h2 {
-  font-style: italic;
-  font-size: 1.25em;
-}
-
-.intro img { margin-bottom: 1em; }
-
-.home .logo { display: none; }
 
 .logo {
   position: relative;

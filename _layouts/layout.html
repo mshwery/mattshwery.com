@@ -11,7 +11,7 @@
     <meta name="description" content="Hi, I'm Matt Shwery – a designer & developer living in New Orleans.">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../css/article.css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,400italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,300|Lora:400,400italic" rel="stylesheet" type="text/css">
     <title>{{ site.title }}{% if page.title %} / {{ page.title }}{% endif %}</title>
   </head>
   <body class="{{ page.body_class }}">
@@ -19,7 +19,9 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
     <header {% if page.featured_background %} style="background: {{ page.featured_background || transparent }};" {% endif %}>
-      <a href="/" class="logo"><img src="../img/logo.png" alt="logo"/></a>
+      <div class="wrapper">
+        <a href="/" class="logo"><img src="../img/logo.png" alt="logo"/></a>
+      </div>
     </header>
 
     <section>
@@ -27,10 +29,13 @@
     </section>
     
     <footer> 
-      <a href="https://twitter.com/mshwery" target="_blank" title="Twitter" class="social">&#62217;<span>Twitter</span></a>
-      <a href="http://dribbble.com/mshwery" target="_blank" title="Dribbble" class="social">&#62235;<span>Dribbble</span></a>
-      <a href="https://github.com/mshwery" target="_blank" title="Github" class="social">&#62208;<span>Github</span></a>
-      <a href="mailto:mshwery@gmail.com" target="_blank" title="Email" class="social">&#57374;<span>Email</span></a>
+      <div class="wrapper">
+        <span>&copy; Matt Shwery. All Rights Reserved.</span>
+        <a href="https://twitter.com/mshwery" target="_blank" title="Twitter">Twitter</a>
+        <a href="http://dribbble.com/mshwery" target="_blank" title="Dribbble">Dribbble</a>
+        <a href="https://github.com/mshwery" target="_blank" title="Github">Github</a>
+        <a href="mailto:mshwery@gmail.com" target="_blank" title="Email">Email</a>
+      </div>
     </footer>
 
     <script type="text/javascript">

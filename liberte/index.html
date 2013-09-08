@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Maximizing Respondent Experience & Preparing for Mobile in Fulcrum</title>
+
+    <meta name="description" content="Peek into the world of accessibility and responsive design to see how they impact the future of the respondent experience. Responsive design and device agnosticism is the new standard – we're implementing solutions that improve respondent accessibility, usability, and routing across all devices, especially those considered "mobile." We'll demo a variety of experiences, from desktop to mobile, and from simple questions to complex grid qualifications.">
+    <meta name="author" content="Matt Shwery">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+        	<h1>Designing for Humans</h1>
+          <p>Maximizing Respondent Experience & Preparing for Mobile in Fulcrum</p>
+          <p>
+            <small>Presented by <a href="http://twitter.com/mshwery" target="_blank">Matt Shwery</a>, <a href="">Lucy Warburton</a>, and <a href="">Michael Velez</a></small>
+          </p>
+        </section>
+
+        <section>
+          <h2>Where are we?</h2>
+          <ul>
+            <li class="fragment">Post-PC - Thousands of devices</li>
+            <li class="fragment">
+            	<strong>12x</strong>
+            		Mobile traffic in 2012 versus entire Internet in 2000 (<a href="http://www.cisco.com/en/US/solutions/collateral/ns341/ns525/ns537/ns705/ns827/white_paper_c11-520862.html" target="_blank">source</a>)
+            </li>
+            <li class="fragment">
+            	<strong>2013</strong> - the year the number of mobile-connected devices will outnumber the world's population. (<a href="http://www.cisco.com/en/US/solutions/collateral/ns341/ns525/ns537/ns705/ns827/white_paper_c11-520862.html">source</a>)
+            </li>
+          </ul>          
+        </section>
+
+        <section>
+          <h3>How do you design for every device?</h3>
+        </section>
+
+        <section>
+          <h2>Responsive Design</h2>
+          <p>Design once. And for all.</p>
+        </section>
+        <section>
+          <h3>This gives you freedom.</h3>
+          <p class="fragment">Dimension Independence.</p>
+          <p class="fragment">Device Agnosticism.</p>            
+        </section>
+        <section>
+        	<p>Call it what you want.</p>
+        	<h3>But what does it mean?</h3>
+        </section>
+        <section>
+        	<h3>#1 Design around content.</h3>
+        	<p>Let your content determine breakpoints and layout shifts as it adapts to different sizes.</p>
+        </section>
+        <section>
+        	<h3>#2 Design for types of interaction.</h3>
+        	<ul>
+        		<li>Touch</li>
+        		<li>Keyboard</li>
+        		<li>Mouse</li>
+        		<li>Touchpad</li>
+        		<li>Voice?</li>
+        		<li>Multi-touch</li>
+        </section>   
+        <section>
+        	<p>Fat Fingers</p>
+          <img src="img/homer_fingers.png">
+        </section>       
+        <section>
+        	<p>width = device-width</p>
+          <img src="img/viewport.png">
+        </section> 
+        <section>
+        	<p>Appropriate Keyboards</p>
+          <img src="img/pattern.png">
+        </section>           
+        <section>
+        	<h3>#3 Design for modes of viewing.</h3>
+        	<p>Sometimes attention is fleeting. Sometimes it's undivided.</p>
+        </section>
+        <section>
+        	<h3>#4 Design for performance.</h3>
+        	<p>Performance is a feature. How fast is your site? How lightweight is it?</p>
+        </section>
+
+      	<section>
+          <h2>Liberté</h2>
+          <p>
+            How we're preparing the way in Fulcrum.
+          </p>
+        </section>
+      	<section>
+          <ul>
+          	<li>Responsive Design</li>
+          	<li>Better Usability</li>
+          	<li>Client-side Validation</li>
+          	<li>Templating + Caching</li>
+          	<li>HTML5 + Patterns</li>
+          	<li>Smarter Routing</li>
+          </ul>
+        </section>
+
+        <section>
+        	<h2>Templating + Caching</h2>
+        	<ul>
+        		<li class="fragment">
+        			More flexible
+        			<p><small>"Oh hey Iphone, let me render this better for you."</small></p>
+        		</li>
+        		<li class="fragment">
+        			More reusable
+        			<p><small>Less maintenance + less coupling = developer happiness</small></p>
+        		</li>
+        		<li class="fragment">
+        			More standardized
+        			<p><small>Forces best-practice data architecture</small></p>
+        		</li>
+        		<li class="fragment">
+        			Fewer server trips
+        			<p><small>Cache everything that's static</small></p>
+        		</li>
+        		<li class="fragment">
+        			API friendly
+        			<p><small>Why load the same page twice?</small></p>
+        		</li>
+        	</ul>
+        </section>
+
+        <section>
+        	<p data-height="600" data-theme-id="0" data-slug-hash="EJpAq" data-user="mshwery" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/mshwery/pen/EJpAq'>EJpAq</a> by Matt Shwery (<a href='http://codepen.io/mshwery'>@mshwery</a>) on <a href='http://codepen.io'>CodePen</a></p>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+        </section>
+        
+        <section data-background="img/grid.png">
+				</section>
+
+        <section data-background="img/newgrid.png">
+				</section>
+
+        <section>
+        	<h3>What about smaller screens?</h3>
+        	<img class="fragment" src="img/small_grid.png">
+				</section>
+
+        <section>
+          <h3>Client Surveys</h3>
+          <p>Ensuring a successful experience with client surveys for all respondents.</p>
+        </section>
+
+        <section>
+          <h3>Tough problem to solve manually</h3>
+          <ul>
+            <li>Impractical: Testing every client survey with a range of devices is not feasible</li>
+            <li>Unreliable: Asking clients if their survey is mobile-friendly is hit-or-miss</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Instead: a technical solution</h3>
+          <p>Programmatically flag surveys where mobile users complete at significantly lower rates than desktop users</p>
+        </section>
+
+        <section>
+          <h3>Steps:</h3>
+        </section>
+
+        <section>
+          <h3>1</h3>
+          <p>Identify respondent's device type and capabilities</p>
+        </section>
+
+        <section>
+          <h3>2</h3>
+          <p>After a certain number of respondents have gone to a survey, calculate completion deltas based on device capabilities</p>
+        </section>
+
+        <section>
+          <h3>3</h3>
+          <p>
+            Route respondents away from surveys where they will face a technological blocker. If the respondent cannot go to another survey (not qualified or based on link type), suggest that they try again on a desktop
+          </p>
+        </section>
+
+        <section>
+          <h3>4</h3>
+          <p>Let them proceed to survey if they return on a device that is capable of completing the client survey</p>
+        </section>
+
+        <section>
+          <h3>Benefits</h3>
+          <ul>
+            <li>Better respondent experience with client surveys</li>
+            <li>Better completion rates</li>
+            <li>Adaptive over time as new devices are used for surveys (wearables / embedded)</li>
+          </ul>
+          <h3>Drawback</h3>
+          <ul>
+            <li>We need to send some respondents as unknowns into surveys until we know the completion deltas</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3><a href="http://staging.samplicio.us/router/default.aspx?SID=9fa7720c-502c-4934-a4da-6b01107f9525&FIRID=MSDHONI7&SUMSTAT=1&PID=mshwery" target="_blank">Demo</a></h3>
+        </section>
+
+        <section>
+          <h1>Thanks</h1>
+          <h3><a href="http://twitter.com/mshwery">Matt Shwery</a></h3>
+          <h3><a href="">Lucy Warburton</a></h3>
+          <h3><a href="">Michael Velez</a></h3>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

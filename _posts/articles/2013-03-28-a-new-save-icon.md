@@ -3,7 +3,6 @@ layout: post
 categories: articles
 title: A New Save Icon
 date: 2013-03-29
-featured_image: floppy.png
 ---
 
 There's been some [recent discussion on Branch about redesigning the save icon](http://branch.com/b/redesigning-the-save-symbol-let-s-do-this). This conversation crops up from [time](http://www.ironicsans.com/2011/04/idea_a_new_save_icon.html) to [time](http://www.marco.org/2011/04/05/replacing-the-save-icon), but no lasting fruit has come from it... <i>yet</i>.
@@ -12,9 +11,12 @@ I feel the "save" metaphor is old, but often still relevant. Ever make changes t
 
 Perhaps the word 'save' needs some thought. What other words represent both legacy, modern, and future versions of this action? Keep, commit, update, sync?
 
-I really like 'commit' because I work with versioning systems on a daily basis. A file goes through many changes – some get committed, others get discarded. Each commit is a snapshot of the file in that moment. Here's my first thought:
+I really like 'commit' because I work with versioning systems on a daily basis. A file goes through many changes – some get committed, others get discarded. Each commit is a snapshot of the file in that moment. Here's my first thought – something similar to revisions in git:
 
-<figure><img src="../img/commit.png"/></figure>
+<figure>
+  <img src="../img/commit.png"/>
+  <figcaption>Left & Middle: uncommitted changes; Right: No new changes to save.</figcaption>
+</figure>
 
 Basically, the circle represents the current moment on a file's version timeline. An empty circle could represent uncommitted changes, while a solid/dotted circle has been committed.
 

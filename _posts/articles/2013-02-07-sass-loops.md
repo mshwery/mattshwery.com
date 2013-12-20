@@ -9,7 +9,7 @@ In nearly every project I've worked on, patterns develop throughout the css. Tha
 
 Sass offers `@each`, `@for`, `@while` loops to simplify pattern-making. [The Sass Way](http://thesassway.com/intermediate/if-for-each-while) talks about this in a bit more detail. Here's an example of `@each`:
 
-~~~ sass
+{% highlight scss %}
 $icon: [create, view, edit, delete]
 
 @each $icon {
@@ -17,11 +17,11 @@ $icon: [create, view, edit, delete]
     background-image: url(/images/icons/#{$icon}.png);
   }
 }
-~~~
+{% endhighlight %}
 
 Results in:
 
-~~~ css
+{% highlight css %}
 .create {
   background-image: url(/images/icons/create.png);
 }
@@ -37,6 +37,6 @@ Results in:
 .delete {
   background-image: url(/images/icons/delete.png);
 }
-~~~
+{% endhighlight %}
 
 It's a simple way to reduce repetitive css. Pretty neat, eh?

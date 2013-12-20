@@ -23,13 +23,13 @@ With Jekyll, you can put together a large site using partials and nested templat
 
 Jekyll is stupid easy to get started. You'll need ruby installed, but after that these three lines generate your initial site.
 
-~~~
+{% highlight bash %}
 ~ $ gem install jekyll
 ~ $ jekyll new my-awesome-site
 ~ $ cd my-awesome-site
 ~/my-awesome-site $ jekyll serve
 # => Now browse to http://localhost:4000
-~~~
+{% endhighlight %}
 
 ### Jekyll on Heroku
 

@@ -16,17 +16,17 @@ Not really the web so much as I mean browsers. Browsers render html rather flexi
 
 That's great. Really, media queries are a handy way to define styles selectively so your. I used to do something like this:
 
-~~~ css
+{% highlight css %}
   @media all and (max-device-width: 480px) { … }
-~~~
+{% endhighlight %}
 
 I defined media queries around device dimensions that I was familiar with (like the iPhone). But this one wont target iPhone 5, nor many Android devices.
 
 I should have been doing this:
 
-~~~ css
+{% highlight css %}
   @media all and (max-width: 600px) { … }
-~~~
+{% endhighlight %}
 
 I shifted my media queries to focus on where the design breaks. It is called a breakpoint, after all. Defining breakpoints by content/layout rather than device dimensions covers a much broader range of displays.
 

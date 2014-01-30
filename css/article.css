@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: 'Merriweather', Times, 'Times New Roman', Georgia, sans-serif;
-  -webkit-font-smoothing: auto; 
+  -webkit-font-smoothing: auto;
 }
 
 body {
@@ -19,6 +19,10 @@ body {
 
 img {
   max-width: 100%;
+}
+
+code {
+  color: #006699;
 }
 
 ::selection {
@@ -37,7 +41,7 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 5px;
 }
 
-h1 { 
+h1 {
   font-size: 3.25em;
   margin-bottom: .25em;
 }
@@ -79,6 +83,7 @@ nav .logo {
   display: inline-block;
   *display: inline;
   zoom: 1;
+  vertical-align: middle;
 }
 
 .more {
@@ -133,7 +138,7 @@ header .wrapper {
 nav a,
 .name span {
   line-height: 100%;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 }
 
 .name {
@@ -289,8 +294,7 @@ pre {
 .articles ul {
   padding: 0;
   list-style: none;
-  font-size: 1.5em;
-  font-size: 1.125em;
+  font-size: 1.25em;
 }
 
 .articles .date {
@@ -356,7 +360,7 @@ footer a {
   nav .logo {
     max-width: 36px;
   }
-  
+
   h1 { font-size: 3em; }
 
   .post-content {
@@ -372,7 +376,7 @@ footer a {
     padding: 1em;
     margin: 0 0 30px;
   }
-  
+
   .post-content figure {
     margin: 0 0 30px;
   }

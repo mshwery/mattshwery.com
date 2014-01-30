@@ -18,9 +18,9 @@ CSS inherently relies on a bit of hand-craftery. It's not very DRY. Preprocessor
 
 ### Placeholders in Sass
 
-My favorite grown-up thing that Sass brings to the table: placeholders. It's an improvement of the @extend directive.
+My favorite grown-up thing that Sass brings to the table: [placeholders](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#placeholder_selectors_). It's an improvement of the ```@extend``` directive.
 
-The @extend directive in Sass allows you to inherit styles from other selectors, and it doesn't duplicate everything like a @mixin does. But it can cause code bloat when mixed with nesting. Placeholders are little blocks of css that you can @extend, but they won't appear in your output css. In fact, the placeholder acts as a placeholder for all selectors that @extend it.
+The ```@extend``` directive in Sass allows you to inherit styles from other selectors, and it doesn't duplicate everything like a ```@mixin``` does. But it can cause code bloat when mixed with nesting. Placeholders are little blocks of css that you can ```@extend```, but they won't appear in your output css. In fact, the placeholder acts as a placeholder for all selectors that ```@extend``` it.
 
 {% highlight scss %}
 // set your placeholder

@@ -4,7 +4,7 @@ categories: articles
 title: Placeholders in Sass
 ---
 
-You should be using a preprocessor.
+You should be using a preprocessor. But I won't argue with you about it if you aren't using one. These are some thoughts on why I love using a CSS preprocessor, and my flavor of choice is Sass.
 
 ### Hand-craft is flawed
 

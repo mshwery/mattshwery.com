@@ -2,8 +2,11 @@
   <ul>
     {% for post in site.categories.articles %}
     <li class="post">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="date">– {{ post.date | date: "%b %e" }}</span>
+      <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <!-- <span class="date">– {{ post.date | date: "%b %e" }}</span> -->
+      <p>
+        {{ post.excerpt | strip_html }} <a class="continue" href="{{ post.url }}">Continue reading...</a>
+      </p>
     </li>
     {% endfor %}
   </ul>

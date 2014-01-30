@@ -5,9 +5,7 @@ title: Built with Jekyll
 featured_image: jekyll.png
 ---
 
-Static sites are awesome.
-
-They're super fast, completely cacheable, database-free, and just plain easy to make. If you don't require database-driven content you can acheive plenty with a simple static site. 
+Static sites are awesome. They're super fast, fully cacheable, database-free, and no-frills-easy to make. If you don't require database-driven content you can achieve plenty with a static site.
 
 But maintenance sucks.
 

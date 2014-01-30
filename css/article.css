@@ -3,8 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', Times, 'Times New Roman', Georgia, sans-serif;
-  -webkit-font-smoothing: auto;
+  font-family: 'Merriweather', 'Lora', Times, 'Times New Roman', Georgia, sans-serif;
 }
 
 body {
@@ -59,8 +58,20 @@ h4 {
 }
 
 a {
-  color: #0085bf; /* #306c9e; /* #2d6a99; /* #3f677f; /* #36A7D8; /* #e73f3f; */ /* #306c9e; */
+  color: #006699; /* #306c9e; /* #2d6a99; /* #3f677f; /* #36A7D8; /* #e73f3f; */ /* #306c9e; */
   text-decoration: none;
+}
+
+.articles .post-title {
+  font-size: 1.75em;
+}
+
+.articles .post-title a {
+  color: #333;
+}
+
+.continue {
+  white-space: nowrap;
 }
 
 .name {
@@ -109,14 +120,15 @@ p sup {
 }
 
 a:hover {
-  color: #006699; /* #0d4774; */
+  color: #0085bf; /* #0d4774; */
 }
 
 nav a,
 nav span {
+  color: #333;
   display: inline-block;
-  margin-right: 1em;
-  vertical-align: bottom;
+  margin-right: .5em;
+  vertical-align: middle;
   font-weight: 400;
   font-family: 'Source Sans Pro', arial, sans-serif;
 }
@@ -125,17 +137,12 @@ nav span {
   margin-right: 3em;
 }
 
-nav a {
-  font-size: 1em;
-}
-
 header .wrapper {
   padding-top: 20px;
   padding-bottom: .5em;
   border-bottom: 2px solid #eee;
 }
 
-nav a,
 .name span {
   line-height: 100%;
   padding-bottom: 2px;
@@ -155,7 +162,7 @@ nav a,
 
 pre {
   /*white-space: pre-wrap;*/
-  overflow: scroll;
+  overflow: auto;
   background: #eee;
   padding: 1em;
 }
@@ -172,6 +179,8 @@ pre {
 
 .post {
   color: #333;
+  padding: 0;
+  margin-top: 3em;
 }
 
 .post header {
@@ -219,11 +228,11 @@ pre {
   font-weight: 300;
   font-size: 1.125em;
   font-family: 'Source Sans Pro', arial, sans-serif;
+  font-style: italic;
 }
 
 .post-content blockquote p {
   line-height: 1.55em;
-  padding: 4px 0;
 }
 
 .post-content ul,
@@ -237,7 +246,7 @@ pre {
   margin-bottom: .75em;
 }
 
-.post-content p {
+p {
   margin: 0 0 32px;
   line-height: 1.65em;
 }
@@ -294,7 +303,7 @@ pre {
 .articles ul {
   padding: 0;
   list-style: none;
-  font-size: 1.25em;
+  font-size: 1.125em;
 }
 
 .articles .date {

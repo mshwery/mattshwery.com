@@ -3,6 +3,9 @@ permalink: /:title
 paginate: 10
 exclude: ['public', 'bin', 'vendor', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md']
 markdown: kramdown
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
 kramdown:
   use_coderay: true
   coderay:

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
+  <script src="js/r3.pie.js"></script>
+
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+    <aside class="note">
+      <section>
+        <ul>
+          <li>Hi</li>
+          <li>Frontend Dev</li>
+          <li>Federated Sample</li>
+          <li>software company in MR but not doing MR</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+<!--   <slide class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <img src="images/fedlogo.svg" style="display: block; width: 62%; height: auto;">
+    </article>
+  </slide> -->
+
+  <slide class="nobackground">
+
+    <aside class="note">
+      <section>
+        <p>the story about our favorite hockey team get scholarship to the prestigious Eden Hall Academy</p>
+        <p><b>favorite mighty ducks movie</b></p>
+      </section>
+    </aside>
+
+    <article class="flexbox vcenter">
+      <img src="images/d3.jpg">
+    </article>
+  </slide>
+
+  <slide>
+    <aside class="note">
+      <section>
+        <ul>
+          <li>actually this is what i'm talking about</li>
+          <li>tons of very rich examples</li>
+          <li>very customizable / composable visualizations</li>
+        </ul>
+      </section>
+    </aside>
+
+    <article>
+      <a href="http://d3js.org">http://d3js.org</a>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>What's D3.js?</h2>
+    </hgroup>
+    <article>
+      <p>What it <b><i>isn't</i></b></p>
+      <ul>
+        <li><b>not</b> a charting/plotting tool</li>
+        <li><b>not</b> canvas, Raphael, or Processing</li>
+        <li><b>not</b> just svg (any elements!)</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>What's D3.js?</h2>
+    </hgroup>
+    <article>
+      <p>What it <b><i>is</i></b></p>
+      <ul>
+        <li>
+          A tool to bind data to the DOM
+        </li>
+        <li>
+          DOM selection and manipulation
+        </li>
+        <li>
+          Stages (Enter/Exit)
+        </li>
+        <li>
+          Transformation and composition
+        </li>
+        <li>
+          Transitions
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>NYTimes by Mike Bostock - creator of d3</li>
+          <li>very unique</li>
+          <li>switch between visualization layers</li>
+          <li>transform the data representation</li>
+          <li>transitions!</li>
+        </ul>
+      </section>
+    </aside>
+
+    <article>
+      <a href="http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html">Example 1</a>
+    </article>
+  </slide>
+
+  <slide>
+    <article>
+      <a href="http://christophermanning.org/gists/1703449/#/[10]50/1/0">Example 2</a>
+    </article>
+  </slide>
+
+  <slide>
+    <article>
+      <a href="http://bl.ocks.org/metormote/raw/6392996/04f796e15b249063f22355b3f48e3f686f4b46c9/">Example 3</a>
+    </article>
+  </slide>
+
+  <slide>
+    <article>
+      <a href="http://bl.ocks.org/mbostock/raw/4062085/47e8d7ea6d446cde559be17d9c09da2a6c80ad1c/">Example 4</a>
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>very simple example</li>
+          <li>no stages (only inserting/drawing once)</li>
+          <li>similar to jQuery</li>
+          <li>declarative style</li>
+          <li>chaining</li>
+        </ul>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h2>Bar Chart</h2>
+    </hgroup>
+    <article>
+      <img src="images/bars.png">
+      <img src="images/bars-1.png">
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>start with a selection of DOM nodes</li>
+          <li>using SVG's rect, so i need to append SVG container first</li>
+        </ul>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h2>Bar Chart</h2>
+    </hgroup>
+    <article>
+      <img src="images/bars.png">
+      <img src="images/bars-2.png">
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>now within our svg, select nodes</li>
+          <li>but they</li>
+        </ul>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h2>Bar Chart</h2>
+    </hgroup>
+    <article>
+      <img src="images/bars.png">
+      <img src="images/bars-3.png">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Bar Chart</h2>
+    </hgroup>
+    <article>
+      <img src="images/bars.png">
+      <img src="images/bars-4.png">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Bar Chart</h2>
+    </hgroup>
+    <article>
+      <img src="images/bars.png">
+      <img src="images/bars-5.png">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Bar Chart</h2>
+    </hgroup>
+    <article>
+      <img src="images/bars.png">
+      <img src="images/bars-6.png">
+    </article>
+  </slide>
+
+  <slide class="nobackground">
+
+    <aside class="note">
+      <section>
+        <p>show example in browser</p>
+        <p><b>the more charts, the more of this</b></p>
+        <p>how do you encapsulate / abstract?</p>
+        <p>what's d3 have to say for itself?</p>
+      </section>
+    </aside>
+
+    <article class="flexbox vcenter">
+      <img src="images/spaghetti.jpeg">
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>you quickly see that using d3 can result in spaghetti code</li>
+          <li>lots of code to create a simple chart - composition!</li>
+          <li>lots of examples - but complexity of them encourages copy/paste culture with lots of boilerplate</li>
+          <li>no concept of reusability - you have to bring that yourself</li>
+        </ul>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h2>Unfortunately...</h2>
+    </hgroup>
+    <article>
+      <p>D3 doesn't offer many opinions about</p>
+      <ul>
+        <li>organization & architecture</li>
+        <li>reducing boilerplate</li>
+        <li>patterns for code reuse</li>
+      </ul>
+    </article>
+<!--
+    <article>
+      <p>A list where items build:</p>
+      <ul class="build">
+        <li>Pressing 'h' highlights code snippets</li>
+        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
+        <li>Pressing 'f' toggles fullscreen viewing</li>
+        <li>Pressing 'w' toggles widescreen</li>
+        <li>Pressing 'o' toggles overview mode</li>
+        <li>Pressing 'ESC' toggles off these goodies</li>
+      </ul>
+      <p>Another list, but items fade as they build:</p>
+      <ul class="build fade">
+        <li>Hover over me!</li>
+        <li>Hover over me!</li>
+        <li>Hover over me!</li>
+      </ul>
+    </article>
+-->
+  </slide>
+
+  <slide class="segue dark quote nobackground">
+    <article class="flexbox vleft auto-fadein">
+      <h2>Architecting <b>Reusable</b> Charts</h2>
+      <div class="author">
+        Mike Bostock<br>
+        Towards Reusable Charts<br>
+        <a href="http://bost.ocks.org/mike/chart/">http://bost.ocks.org/mike/chart/</a>
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>guidelines from Mike Bostock and Just Smart concepts</li>
+          <li>these tenants will guide us in creating our own or selecting existing frameworks</li>
+        </ul>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h2>Architecting Reusable Charts</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Configurable</li>
+        <li>Extensible / Composable</li>
+        <li>Repeatable</li>
+        <li>Updatable</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>R3 - a small modular wrapper around d3 for my company</li>
+          <li>can pass object with configuration</li>
+          <li>this uses the donut or pie module</li>
+          <li>each pie chart below is generated by this with different configurations</li>
+        </ul>
+        <p><b>this code example is on the right, updating its data with the current time in seconds, every second</b></p>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h4>Architecting Reusable Charts</h4>
+      <h2>Configurable</h2>
+    </hgroup>
+    <article class="smaller">
+      <p>Using r3</p>
+      <pre class="prettyprint" data-lang="javascript">
+var opts = {
+  maxValue: 60,
+  background: true,
+  thickness: 2
+};
+
+var donut = r3.donut.generate(opts);
+
+setInterval(function() {
+  donut.load({ data: new Date().getSeconds() });
+}, 1000);
+</pre>
+      <div id="pie-1" class="pie-example"></div>
+      <div id="pie-2" class="pie-example"></div>
+      <div id="pie-3" class="pie-example"></div>
+
+      <script type="text/javascript">
+        var r = 150;
+
+        width = height = 150;
+
+        var donut = r3.donut.generate({
+          bindTo: '#pie-3',
+          maxValue: 60,
+          background: true,
+          thickness: 2,
+          colors: ['red'],
+          size: {
+            width: r,
+            height: r
+          }
+        });
+
+        setInterval(function() {
+          donut.load({ data: new Date().getSeconds() });
+        }, 1000);
+
+        var donut2 = r3.donut.generate({
+          bindTo: '#pie-2',
+          thickness: 20,
+          offset: 8,
+          size: {
+            width: r,
+            height: r
+          }
+        });
+
+        donut2.load({ data: [2,6,4,7,11] });
+
+        var donut3 = r3.donut.generate({
+          bindTo: '#pie-1',
+          size: {
+            width: r,
+            height: r
+          }
+        });
+
+        donut3.load({ data: [2,6,4,7,11] });
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>d3.chart (small d3 extention framework) has a good example extensibility</li>
+          <li>define blueprints</li>
+          <li>extend to new blueprints (similar to Backbone and jQuery concepts of extend)</li>
+          <li>can also compose multiple layers of blueprints into a richer visualization blueprint</li>
+        </ul>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h4>Architecting Reusable Charts</h4>
+      <h2>Extensible</h2>
+    </hgroup>
+    <article class="smaller">
+      <p>Using d3.chart</p>
+      <pre class="prettyprint" data-lang="javascript">
+// define a chart
+d3.chart("CircleChart", {
+  initialize: function() {
+    log("Hi! I'm a chart");
+  }
+});
+
+// extend the original chart with additional functionality
+d3.chart("CircleChart").extend("OtherCircleChart", {
+  initialize: function() {
+    log("I am a circle chart based on the one above!");
+  }
+})
+
+var chart = d3.select(output)
+  .chart("OtherCircleChart");
+</pre>
+      <footer class="source">source: <a href="http://misoproject.com/d3-chart/api.html#d3chart_extend">http://misoproject.com/d3-chart/api.html#d3chart_extend</a></footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h4>Architecting Reusable Charts</h4>
+      <h2>Repeatable</h2>
+    </hgroup>
+    <article class="smaller">
+      <p>Easily reuse a chart's blueprints on any node (using d3.chart)</p>
+      <pre class="prettyprint" data-lang="javascript">
+// define a chart
+d3.chart("CircleChart", {
+  initialize: function() {
+    log("Hi! I'm a chart");
+  }
+});
+
+var chart1 = d3.select("#chart1")
+  .chart("CircleChart");
+
+var chart2 = d3.select("#chart2")
+  .chart("CircleChart");
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>almost all of our implementations need to be easily updated with new data points</li>
+          <li>use d3's concept of stages</li>
+          <li>that's more boilerplate in all of our charts</li>
+          <li>d3.chart provides a 'draw' method that allows you to pass in a dataset those blueprints are expected to draw</li>
+          <li>your blueprints can have instructions for transitioning those stages (enter/exit/udpate)</li>
+          <li>blueprint also emits events you can use outside of your chart</li>
+        </ul>
+      </section>
+    </aside>
+
+    <hgroup>
+      <h4>Architecting Reusable Charts</h4>
+      <h2>Updatable</h2>
+    </hgroup>
+    <article class="smaller">
+      <pre class="prettyprint" data-lang="javascript">
+// assume previously defined d3.chart called
+// CircleChart
+
+// create an instance of the chart on a d3 selection
+var chart = d3.select(output)
+  .append("svg")
+  .attr("height", 30)
+  .attr("width", 400)
+  .chart("CircleChart");
+
+var data = [1,4,6,9,12,13,30];
+
+// render it with some data
+chart.draw(data);
+
+// add data
+data.push(35);
+
+// render it with updated data
+chart.draw(data);
+</pre>
+      <footer class="source">source: Miso Project – d3.chart <a href="http://misoproject.com/d3-chart/api.html#d3chart_i_draw">http://misoproject.com/d3-chart/api.html#d3chart_i_draw</a></footer>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <h2>Other projects doing this:</h2>
+      <ul>
+        <li>n3-charts <a href="http://n3-charts.github.io/line-chart/#/">http://n3-charts.github.io/line-chart/</a></li>
+        <li>NVD3 <a href="http://nvd3.org/">http://nvd3.org/</a></li>
+        <li>C3 <a href="http://c3js.org/">http://c3js.org/</a></li>
+        <li>d3.chart <a href="http://misoproject.com/d3-chart/">http://misoproject.com/d3-chart/</a></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>d3.chart is most attractive to me</li>
+          <li>doesnt provide the charts themselves</li>
+          <li>provides a framework for defining blueprints for charts</li>
+          <li>you can share or find other blueprints for charts, axes, labels from other devs</li>
+          <li>compose, mix n' match, extend your own</li>
+          <li>encapsulates instructions</li>
+          <li>provides events</li>
+          <li>abstracts the boilerplate that's common for all charts</li>
+        </ul>
+      </section>
+    </aside>
+
+    <article class="flexbox vcenter">
+      <img src="images/d3.chart.png">
+      <footer class="source">source: Miso Project – d3.chart <a href="http://misoproject.com/d3-chart/">http://misoproject.com/d3-chart/</a></footer>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <article class="flexbox vleft auto-fadein">
+      <h2>Thank You!</h2>
+      <p>Questions?</p>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>

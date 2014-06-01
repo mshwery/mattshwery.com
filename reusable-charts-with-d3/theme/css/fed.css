@@ -1,0 +1,26 @@
+img + img {
+  vertical-align: top;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -250px;
+}
+
+.quote h2 {
+  font-weight: normal;
+}
+
+.highlit {
+  color: #8DC63F;
+}
+
+article h2 {
+  line-height: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.pie-example {
+  display: inline-block;
+  vertical-align: top;
+}

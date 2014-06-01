@@ -10,3 +10,7 @@ gem 'kramdown'
 gem 'coffee-script'
 gem 'sass'
 gem 'uglifier'
+
+gem 'rack-contrib'
+gem 'rack-rewrite'
+gem 'unicorn', '~> 4.6.0'

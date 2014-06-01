@@ -1,3 +1,7 @@
+---
+pageRoot: '../reusable-charts-with-d3/'
+---
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,15 +13,15 @@
   <!--This one seems to work all the time, but really small on ipad-->
   <!--<meta name="viewport" content="initial-scale=0.4">-->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="stylesheet" media="all" href="theme/css/default.css">
-  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <link rel="stylesheet" media="all" href="{{page.pageRoot}}theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="{{page.pageRoot}}theme/css/phone.css">
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
-  <script src="js/r3.pie.js"></script>
+  <script src="{{page.pageRoot}}js/r3.pie.js"></script>
 
-  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+  <script data-main="{{page.pageRoot}}js/slides" src="{{page.pageRoot}}js/require-1.0.8.min.js"></script>
 </head>
 <body style="opacity: 0">
 
@@ -45,7 +49,7 @@
 
 <!--   <slide class="logoslide nobackground">
     <article class="flexbox vcenter">
-      <img src="images/fedlogo.svg" style="display: block; width: 62%; height: auto;">
+      <img src="{{page.pageRoot}}images/fedlogo.svg" style="display: block; width: 62%; height: auto;">
     </article>
   </slide> -->
 
@@ -59,7 +63,7 @@
     </aside>
 
     <article class="flexbox vcenter">
-      <img src="images/d3.jpg">
+      <img src="{{page.pageRoot}}images/d3.jpg">
     </article>
   </slide>
 
@@ -174,8 +178,8 @@
       <h2>Bar Chart</h2>
     </hgroup>
     <article>
-      <img src="images/bars.png">
-      <img src="images/bars-1.png">
+      <img src="{{page.pageRoot}}images/bars.png">
+      <img src="{{page.pageRoot}}images/bars-1.png">
     </article>
   </slide>
 
@@ -194,8 +198,8 @@
       <h2>Bar Chart</h2>
     </hgroup>
     <article>
-      <img src="images/bars.png">
-      <img src="images/bars-2.png">
+      <img src="{{page.pageRoot}}images/bars.png">
+      <img src="{{page.pageRoot}}images/bars-2.png">
     </article>
   </slide>
 
@@ -214,8 +218,8 @@
       <h2>Bar Chart</h2>
     </hgroup>
     <article>
-      <img src="images/bars.png">
-      <img src="images/bars-3.png">
+      <img src="{{page.pageRoot}}images/bars.png">
+      <img src="{{page.pageRoot}}images/bars-3.png">
     </article>
   </slide>
 
@@ -224,8 +228,8 @@
       <h2>Bar Chart</h2>
     </hgroup>
     <article>
-      <img src="images/bars.png">
-      <img src="images/bars-4.png">
+      <img src="{{page.pageRoot}}images/bars.png">
+      <img src="{{page.pageRoot}}images/bars-4.png">
     </article>
   </slide>
 
@@ -234,8 +238,8 @@
       <h2>Bar Chart</h2>
     </hgroup>
     <article>
-      <img src="images/bars.png">
-      <img src="images/bars-5.png">
+      <img src="{{page.pageRoot}}images/bars.png">
+      <img src="{{page.pageRoot}}images/bars-5.png">
     </article>
   </slide>
 
@@ -244,8 +248,8 @@
       <h2>Bar Chart</h2>
     </hgroup>
     <article>
-      <img src="images/bars.png">
-      <img src="images/bars-6.png">
+      <img src="{{page.pageRoot}}images/bars.png">
+      <img src="{{page.pageRoot}}images/bars-6.png">
     </article>
   </slide>
 
@@ -261,7 +265,7 @@
     </aside>
 
     <article class="flexbox vcenter">
-      <img src="images/spaghetti.jpeg">
+      <img src="{{page.pageRoot}}images/spaghetti.jpeg">
     </article>
   </slide>
 
@@ -569,7 +573,7 @@ chart.draw(data);
     </aside>
 
     <article class="flexbox vcenter">
-      <img src="images/d3.chart.png">
+      <img src="{{page.pageRoot}}images/d3.chart.png">
       <footer class="source">source: Miso Project – d3.chart <a href="http://misoproject.com/d3-chart/">http://misoproject.com/d3-chart/</a></footer>
     </article>
   </slide>

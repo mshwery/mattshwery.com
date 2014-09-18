@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="740px" height="626px" viewBox="0 0 740 626" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(181.000000, 44.000000)">
+                <path d="M41.9691711,137 L106.858734,137" id="Line" stroke="#C6C9CC" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M271.969171,137 L336.858734,137" id="Line" stroke="#C6C9CC" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M74,138.5 L74,156.681818" id="Line" stroke="#C6C9CC" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M304,138.5 L304,156.681818" id="Line" stroke="#C6C9CC" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M141.969171,137 L257.004349,137" id="Line-3" stroke="#C6C9CC" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M200,138.5 L200,156.681818" id="Line-2" stroke="#C6C9CC" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <text id="DOCUMENT-ORIGIN" sketch:type="MSTextLayer" font-family="Lato" font-size="40" font-weight="260" sketch:alignment="middle" fill="#4681CF">
+                    <tspan x="0.35" y="39">DOCUMENT ORIGIN</tspan>
+                </text>
+                <text id="https://localhost:40" sketch:type="MSTextLayer" font-family="Lato" font-size="30" font-weight="normal" sketch:alignment="middle">
+                    <tspan x="41.1725" y="123" fill="#4681CF">https</tspan>
+                    <tspan x="108.2075" y="123" fill="#C6C9CC">://</tspan>
+                    <tspan x="142.8275" y="123" fill="#4681CF">localhost</tspan>
+                    <tspan x="260.7275" y="123" fill="#C6C9CC">:</tspan>
+                    <tspan x="268.2275" y="123" fill="#4681CF">4000</tspan>
+                </text>
+                <text id="PROTOCOL" sketch:type="MSTextLayer" font-family="Lato" font-size="16" font-weight="260" sketch:alignment="middle" fill="#566D88">
+                    <tspan x="31.436" y="179">PROTOCOL</tspan>
+                </text>
+                <text id="HOST" sketch:type="MSTextLayer" font-family="Lato" font-size="16" font-weight="260" sketch:alignment="middle" fill="#566D88">
+                    <tspan x="178.716" y="179">HOST</tspan>
+                </text>
+                <text id="PORT" sketch:type="MSTextLayer" font-family="Lato" font-size="16" font-weight="260" sketch:alignment="middle" fill="#566D88">
+                    <tspan x="283.556" y="179">PORT</tspan>
+                </text>
+            </g>
+            <g id="https://example.com-+-http://example.com-+-http://app.example.c" sketch:type="MSLayerGroup" transform="translate(264.000000, 367.000000)" font-size="20" font-family="Lato" font-weight="normal">
+                <text id="https://example.com" sketch:type="MSTextLayer">
+                    <tspan x="0" y="20" fill="#4681CF">https</tspan>
+                    <tspan x="44.69" y="20" fill="#C6C9CC">://</tspan>
+                    <tspan x="67.77" y="20" fill="#4681CF">example.com</tspan>
+                </text>
+                <text id="http://example.com" sketch:type="MSTextLayer">
+                    <tspan x="0" y="50" fill="#4681CF">http</tspan>
+                    <tspan x="36.03" y="50" fill="#C6C9CC">://</tspan>
+                    <tspan x="59.11" y="50" fill="#4681CF">example.com</tspan>
+                </text>
+                <text id="http://app.example.c" sketch:type="MSTextLayer">
+                    <tspan x="0" y="80" fill="#4681CF">http</tspan>
+                    <tspan x="36.03" y="80" fill="#C6C9CC">://</tspan>
+                    <tspan x="59.11" y="80" fill="#4681CF">app.example.com</tspan>
+                </text>
+                <text id="http://example.com:8" sketch:type="MSTextLayer">
+                    <tspan x="0" y="110" fill="#4681CF">http</tspan>
+                    <tspan x="36.03" y="110" fill="#C6C9CC">://</tspan>
+                    <tspan x="59.11" y="110" fill="#4681CF">example.com:81</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle-1" stroke="#ED1C24" stroke-width="2" sketch:type="MSShapeGroup" x="227" y="339" width="287" height="175"></rect>
+            <text id="These-are-all-differ" sketch:type="MSTextLayer" font-family="Lato" font-size="20" font-weight="normal" line-spacing="23" fill="#ED1C24">
+                <tspan x="528" y="435">These are all different</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

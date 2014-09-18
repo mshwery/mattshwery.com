@@ -1,0 +1,19 @@
+.talk-title {
+
+}
+
+.full-size {
+  height: 100%;
+  width: 100%;
+}
+
+.offline-first img,
+.cookies img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.cookies img {
+  max-width: 50%;
+}

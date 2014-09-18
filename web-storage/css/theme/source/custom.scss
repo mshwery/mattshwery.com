@@ -1,0 +1,118 @@
+/**
+ * Custom theme for reveal.js.
+ * Author: Matt Shwery
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+$color: #4681CF;
+
+/*
+ * Override theme settings (see ../template/settings.scss)
+ */ 
+
+// Background of the presentation
+$backgroundColor: #fff;
+
+// Primary/body text
+$mainFont: 'Roboto', sans-serif;
+$mainFontSize: 34px;
+$mainColor: #626467;
+
+// Headings
+$headingMargin: 0 0 20px 0;
+$headingFont: 'Roboto Slab', sans-serif;
+$headingColor: $color;
+$headingLineHeight: 1.25em;
+$headingLetterSpacing: normal; // 0.02em;
+$headingTextTransform: normal; // uppercase;
+$headingTextShadow: none; // 0px 0px 6px rgba(0,0,0,0.2);
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: $color;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #134674; // #FF5E99;
+$selectionColor: #fff;
+
+// Fix links so they are not cut off
+.reveal a:not(.image) {
+  line-height: 1.3em;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal h1,
+.reveal h2 {
+  // font-weight: 200;
+}
+
+.reveal h3, h4 {
+  // font-weight: 300;
+}
+
+.reveal .dark {
+  color: $backgroundColor !important;
+
+  h1, h2, h3, h4, h5, h6, p, span, a {
+    color: $backgroundColor;
+  }
+}
+
+.reveal .slides {
+  text-align: left;
+
+  .center {
+    text-align: center;
+  }
+}
+
+.reveal li {
+  line-height: 1.1em;
+  margin-top: 1em;
+
+  a {
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+.reveal pre {
+  line-height: 2em;
+  width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 0.45em;
+
+  code {
+    max-height: 600px;
+    box-sizing: border-box;
+  }
+}
+
+.reveal section img {
+  border: none;
+  box-shadow: none;
+}
+
+.reveal cite {
+  color: lighten($mainColor, 20%);
+}
+
+.reveal small {
+  color: lighten($mainColor, 20%);
+  vertical-align: baseline;
+}
